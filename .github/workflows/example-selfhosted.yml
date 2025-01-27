@@ -1,0 +1,13 @@
+name: 'Workflow na selfhosted'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test_selfhosted:
+    runs-on: self-hosted
+    steps:
+      - name: 'Just echo'
+        run: echo 'Hello'
+      - name: 'Just grep'
+        run: grep 'hqr' /actionsDemo/file.txt
